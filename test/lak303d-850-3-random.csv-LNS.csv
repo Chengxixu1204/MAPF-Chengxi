@@ -1,0 +1,6 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+4340.41,269669,269669,162378,162378,0,-1,4340.41,0,0,2173046917,861140689,1770518783,362525,3.24774,LNS(PP;PP),instances/scen-random/lak303d-random-1.scen
+3827.53,275778,275778,160589,160589,0,-1,3827.53,0,0,2069970144,856574033,1675441173,362525,3.21933,LNS(PP;PP),instances/scen-random/lak303d-random-2.scen
+2035.71,0,-1,156497,156497,0,-1,2035.71,0,0,1056281578,469404920,844334883,238135,3.3119,LNS(PP;PP),instances/scen-random/lak303d-random-3.scen
+3111.75,262498,262498,154269,154269,0,-1,3111.75,0,0,1460941913,728636480,1140330277,362525,3.29541,LNS(PP;PP),instances/scen-random/lak303d-random-4.scen
+2777.24,258832,258832,154604,154604,0,-1,2777.24,0,0,1196270851,701146149,912318444,362525,3.31477,LNS(PP;PP),instances/scen-random/lak303d-random-5.scen

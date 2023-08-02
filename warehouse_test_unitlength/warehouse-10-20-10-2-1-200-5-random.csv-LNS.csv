@@ -1,0 +1,13 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+1726.55,18704,18704,16019,16019,0,-1,1726.55,0,0,3938585,4473489,984716,20300,0.961163,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-1.scen
+1247.25,0,-1,16197,16197,0,-1,1247.25,0,0,3272854,3483414,975069,16634,0.914045,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-2.scen
+2671.39,19500,19500,16393,16393,0,-1,2671.39,0,0,4277567,4768520,1230562,20300,0.925087,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-3.scen
+1753.69,17736,17736,15048,15048,0,-1,1753.69,0,0,2835721,3627962,589477,20300,0.889987,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-4.scen
+2949.34,19657,19657,16004,16004,0,-1,2949.34,0,0,3848148,4208092,1207284,20300,0.881306,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-5.scen
+2092.14,20051,20051,16687,16687,0,-1,2092.14,0,0,4888895,4708931,1867273,20300,0.921907,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-6.scen
+2171.55,18851,18851,16227,16227,0,-1,2171.55,0,0,3541400,4107774,1023867,20300,0.698838,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-7.scen
+1986.63,18134,18134,15203,15203,0,-1,1986.63,0,0,3260414,3903920,823776,20300,0.724588,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-8.scen
+1573.1,18881,18881,16496,16496,0,-1,1573.1,0,0,4713569,4305746,1988205,20300,0.740159,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-9.scen
+1774.97,18951,18951,16154,16154,0,-1,1774.97,0,0,5688153,4796307,2488955,20300,0.717174,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-10.scen
+741.625,0,-1,16247,16247,0,-1,741.625,0,0,5156143,3590768,2652911,14843,0.718961,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-11.scen
+1348.44,18215,18215,16070,16070,0,-1,1348.44,0,0,4798451,4651602,1786626,20300,0.760666,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-12.scen

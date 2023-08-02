@@ -1,0 +1,26 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+1.40974,0,-1,4429,4429,0,-1,1.40974,0,0,670776,1276539,84651,14225,0.0417974,LNS(PP;PP),instances/scen-random/random-32-32-20-random-1.scen
+0.404529,0,-1,4466,4466,0,-1,0.404529,0,0,200406,436667,11576,6379,0.0419381,LNS(PP;PP),instances/scen-random/random-32-32-20-random-2.scen
+2.21891,6747,6747,4300,4300,0,-1,2.21891,0,0,994304,1878574,105581,20300,0.041893,LNS(PP;PP),instances/scen-random/random-32-32-20-random-3.scen
+2.21157,0,-1,4353,4353,0,-1,2.21157,0,0,1076420,1769256,241366,17722,0.0414299,LNS(PP;PP),instances/scen-random/random-32-32-20-random-4.scen
+0.769225,0,-1,4588,4588,0,-1,0.769225,0,0,384692,742250,46343,8841,0.0420668,LNS(PP;PP),instances/scen-random/random-32-32-20-random-5.scen
+2.3159,0,-1,4441,4441,0,-1,2.3159,0,0,1130895,1869951,241503,17480,0.0421493,LNS(PP;PP),instances/scen-random/random-32-32-20-random-6.scen
+0.234666,0,-1,4287,4287,0,-1,0.234666,0,0,122290,260988,7322,4196,0.0418376,LNS(PP;PP),instances/scen-random/random-32-32-20-random-7.scen
+0.989059,0,-1,4489,4489,0,-1,0.989059,0,0,470999,946147,49836,11222,0.0417312,LNS(PP;PP),instances/scen-random/random-32-32-20-random-8.scen
+2.70161,0,-1,4431,4431,0,-1,2.70161,0,0,1346183,2073573,324467,19888,0.0418172,LNS(PP;PP),instances/scen-random/random-32-32-20-random-9.scen
+2.27724,7111,7111,4255,4255,0,-1,2.27724,0,0,1060578,1889161,161796,20300,0.0418287,LNS(PP;PP),instances/scen-random/random-32-32-20-random-10.scen
+2.52762,7105,7105,4368,4368,0,-1,2.52762,0,0,1251091,2016294,266135,20300,0.0417145,LNS(PP;PP),instances/scen-random/random-32-32-20-random-11.scen
+3.15372,0,-1,4574,4574,0,-1,3.15372,0,0,1607593,2352870,419495,19316,0.0420733,LNS(PP;PP),instances/scen-random/random-32-32-20-random-12.scen
+2.26345,0,-1,4439,4439,0,-1,2.26345,0,0,1057658,1882257,176494,18855,0.0417693,LNS(PP;PP),instances/scen-random/random-32-32-20-random-13.scen
+2.49559,7003,7003,4505,4505,0,-1,2.49559,0,0,1201381,1984680,252815,20300,0.041711,LNS(PP;PP),instances/scen-random/random-32-32-20-random-14.scen
+2.50986,7187,7187,4489,4489,0,-1,2.50986,0,0,1151612,2076916,176207,20300,0.0420369,LNS(PP;PP),instances/scen-random/random-32-32-20-random-15.scen
+1.40243,0,-1,4445,4445,0,-1,1.40243,0,0,680553,1268348,83515,13412,0.0417948,LNS(PP;PP),instances/scen-random/random-32-32-20-random-16.scen
+2.36626,0,-1,4510,4510,0,-1,2.36626,0,0,1167210,1872228,251752,17567,0.0417127,LNS(PP;PP),instances/scen-random/random-32-32-20-random-17.scen
+2.46483,6954,6954,4505,4505,0,-1,2.46483,0,0,1245686,1936850,285597,20300,0.0417503,LNS(PP;PP),instances/scen-random/random-32-32-20-random-18.scen
+2.21571,0,-1,4537,4537,0,-1,2.21571,0,0,1072824,1830503,206701,18358,0.0418077,LNS(PP;PP),instances/scen-random/random-32-32-20-random-19.scen
+2.65939,7257,7257,4490,4490,0,-1,2.65939,0,0,1251270,2160083,207671,20300,0.0417745,LNS(PP;PP),instances/scen-random/random-32-32-20-random-20.scen
+0.189636,0,-1,4404,4404,0,-1,0.189636,0,0,100878,212796,3748,3424,0.0416571,LNS(PP;PP),instances/scen-random/random-32-32-20-random-21.scen
+2.75864,7848,7848,4505,4505,0,-1,2.75864,0,0,1331077,2139286,285501,20300,0.0420987,LNS(PP;PP),instances/scen-random/random-32-32-20-random-22.scen
+0.879084,0,-1,4436,4436,0,-1,0.879084,0,0,451944,797567,85154,9419,0.0425727,LNS(PP;PP),instances/scen-random/random-32-32-20-random-23.scen
+1.02064,0,-1,4324,4324,0,-1,1.02064,0,0,509764,912787,93211,10887,0.0418631,LNS(PP;PP),instances/scen-random/random-32-32-20-random-24.scen
+1.52734,0,-1,4540,4540,0,-1,1.52734,0,0,819943,1237835,222871,12716,0.0416265,LNS(PP;PP),instances/scen-random/random-32-32-20-random-25.scen

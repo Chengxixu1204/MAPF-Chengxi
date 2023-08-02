@@ -1,0 +1,26 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+1.54594,11057,11057,8991,8991,0,-1,1.54594,0,0,1408446,1057327,708764,5150,0.103565,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-1.scen
+1.41339,10436,10436,8963,8963,0,-1,1.41339,0,0,1344979,1072248,636734,5150,0.152119,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-2.scen
+1.38583,10559,10559,8969,8969,0,-1,1.38583,0,0,1223877,1041299,553745,5150,0.104276,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-3.scen
+1.74254,9708,9708,7810,7810,0,-1,1.74254,0,0,1755322,1080772,1018432,5150,0.103217,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-4.scen
+1.06753,10121,10121,8536,8536,0,-1,1.06753,0,0,847343,909884,279410,5150,0.103268,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-5.scen
+1.40658,10901,10901,8750,8750,0,-1,1.40658,0,0,1298995,1081328,577067,5150,0.104087,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-6.scen
+1.38016,9954,9954,8165,8165,0,-1,1.38016,0,0,1276576,919680,709258,5150,0.10341,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-7.scen
+0.914533,9116,9116,7916,7916,0,-1,0.914533,0,0,695059,813849,191526,5150,0.104276,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-8.scen
+1.36292,10239,10239,8856,8856,0,-1,1.36292,0,0,1233161,943125,617692,5150,0.103135,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-9.scen
+1.3937,10843,10843,9085,9085,0,-1,1.3937,0,0,1289685,1024403,633772,5150,0.104573,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-10.scen
+2.57482,10868,10868,8761,8761,0,-1,2.57482,0,0,2802274,1236631,1949504,5150,0.103886,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-11.scen
+1.20889,9510,9510,8269,8269,0,-1,1.20889,0,0,1078540,942620,442021,5150,0.105427,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-12.scen
+0.766925,9903,9903,8316,8316,0,-1,0.766925,0,0,495365,744543,55037,5150,0.104767,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-13.scen
+3.24395,10992,10992,8842,8842,0,-1,3.24395,0,0,3695124,1164437,2898778,5150,0.103325,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-14.scen
+1.28895,10263,10263,8619,8619,0,-1,1.28895,0,0,1185925,1020034,504614,5150,0.105419,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-15.scen
+1.2363,10796,10796,8918,8918,0,-1,1.2363,0,0,975764,1001254,343733,5150,0.106147,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-16.scen
+1.15454,10195,10195,8671,8671,0,-1,1.15454,0,0,989019,847659,446274,5150,0.104335,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-17.scen
+1.04131,9832,9832,8173,8173,0,-1,1.04131,0,0,888130,853269,330615,5150,0.10464,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-18.scen
+1.22045,10154,10154,8585,8585,0,-1,1.22045,0,0,1008558,992405,365888,5150,0.104543,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-19.scen
+1.40331,10688,10688,8805,8805,0,-1,1.40331,0,0,1254040,938320,662063,5150,0.105616,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-20.scen
+0.907796,10130,10130,8812,8812,0,-1,0.907796,0,0,672252,815910,161273,5150,0.105267,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-21.scen
+1.53312,10558,10558,8583,8583,0,-1,1.53312,0,0,1502622,1123483,725758,5150,0.103343,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-22.scen
+1.0577,10312,10312,8951,8951,0,-1,1.0577,0,0,804484,922330,239513,5150,0.105009,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-23.scen
+1.30732,11150,11150,9213,9213,0,-1,1.30732,0,0,1132454,1013087,492804,5150,0.106302,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-24.scen
+2.17486,10264,10264,8899,8899,0,-1,2.17486,0,0,2328620,1067225,1594146,5150,0.104445,LNS(PP;PP),instances/scen-random/warehouse-10-20-10-2-1-random-25.scen

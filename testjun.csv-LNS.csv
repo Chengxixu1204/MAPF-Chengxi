@@ -1,0 +1,12 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+0.0342893,0,-1,8944,8944,0,-1,0.0342893,0,0,10006,15175,1022,128,0.204877,LNS(PP;PP),random-32-32-20-random-1.scen
+0.0144785,0,-1,2253,2253,0,-1,0.0144785,0,0,4020,6813,132,72,0.0554414,LNS(PP;PP),random-32-32-20-random-1.scen
+0.00262344,0,-1,1082,1082,0,-1,0.00262344,0,0,983,1147,0,8,0.0275083,LNS(PP;PP),random-32-32-20-random-1.scen
+0.00556203,0,-1,1082,1082,0,-1,0.00556203,0,0,983,1147,0,8,0.0294504,LNS(PP;PP),random-32-32-20-random-1.scen
+0.00281614,0,-1,1082,1082,0,-1,0.00281614,0,0,983,1147,0,8,0.026538,LNS(PP;PP),random-32-32-20-random-1.scen
+0.00138065,216,216,196,196,0,-1,0.00138065,0,0,228,475,0,10,0.00529029,LNS(PP;PP),random-32-32-20-random-1.scen
+0.00318396,681,681,622,622,0,-1,0.00318396,0,0,859,1750,9,30,0.0167656,LNS(PP;PP),random-32-32-20-random-1.scen
+0.037778,788,788,622,622,0,-1,0.037778,0,0,10517,22720,114,495,0.017665,LNS(PP;PP),random-32-32-20-random-1.scen
+0.702197,3045,3045,2253,2253,0,-1,0.702197,0,0,170917,349700,14321,5150,0.055741,LNS(PP;PP),random-32-32-20-random-1.scen
+3.04033,3045,3045,2253,2253,0,-1,3.04033,0,0,170917,349700,14321,5150,0.265263,LNS(PP;PP),random-32-32-20-random-1.scen
+2.79565,3045,3045,2253,2253,0,-1,2.79565,0,0,170917,349700,14321,5150,0.202286,LNS(PP;PP),random-32-32-20-random-1.scen
