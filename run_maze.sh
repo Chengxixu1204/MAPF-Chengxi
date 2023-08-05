@@ -16,8 +16,8 @@ tl=3000
 
 for k in $(seq 50 50 200)
 do
-  mode=5
-  output=maze_test_unitlength/$name-$k-$mode-random.csv
+  mode=4
+  output=maze_test_LHfixed/$name-$k-$mode-random.csv
   for i in $(seq 1 1 25)
   do
     echo    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode

@@ -14,11 +14,11 @@ tl=3000
 # 5 recompute mdd
 # 6 no recompute mdd
 
-for k in $(seq 150 50 200)
+for k in $(seq 200 50 200)
 do
   mode=5
   output=warehouse_test_size/$name-$k-$mode-random.csv
-  for i in $(seq 1 1 25)
+  for i in $(seq 17 1 25)
   do
     echo    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
     ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
