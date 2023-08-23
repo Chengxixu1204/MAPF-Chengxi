@@ -5,20 +5,20 @@
 #name=lak303d
 #name=warehouse-10-20-10-2-1
 
-name=warehouse-10-20-10-2-1
+name=random-32-32-20
 map=instances/mapf-map/$name.map
 scen=instances/scen-random/$name-random
 
-tl=3000
+tl=90000
 
 # 5 recompute mdd
 # 6 no recompute mdd
 
-for k in $(seq 200 50 200)
+for k in $(seq 100 25 225)
 do
   mode=5
-  output=warehouse_test_size/$name-$k-$mode-random.csv
-  for i in $(seq 17 1 25)
+  output=random_test_unit_density/$name-$k-$mode-random.csv
+  for i in $(seq 1 1 25)
   do
     echo    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
     ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode

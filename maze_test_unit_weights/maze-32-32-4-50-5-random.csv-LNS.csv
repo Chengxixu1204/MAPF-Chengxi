@@ -1,0 +1,26 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+9.29613,0,-1,2350,2350,0,-1,9.29613,0,0,48298,94041,1028,747,0.0267012,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-1.scen
+17.5624,2760,2760,2225,2225,0,-1,17.5624,0,0,121528,190893,32707,1325,0.0308541,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-2.scen
+16.8018,2497,2497,2101,2101,0,-1,16.8018,0,0,71897,142900,10707,1325,0.0283224,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-3.scen
+60.7835,2855,2855,2045,2045,0,-1,60.7835,0,0,120821,165956,40017,1325,0.0288389,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-4.scen
+18.4173,2817,2817,2323,2323,0,-1,18.4173,0,0,86692,180501,7588,1325,0.0284547,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-5.scen
+6.73537,2827,2827,2484,2484,0,-1,6.73537,0,0,111662,211490,12334,1325,0.0268888,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-6.scen
+15.0448,2217,2217,1711,1711,0,-1,15.0448,0,0,65383,128192,12396,1325,0.0285273,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-7.scen
+3.44873,0,-1,1839,1839,0,-1,3.44873,0,0,51192,84477,10102,761,0.0294936,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-8.scen
+37.3152,3177,3177,2336,2336,0,-1,37.3152,0,0,89081,181938,8811,1325,0.0296673,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-9.scen
+30.5483,2572,2572,1956,1956,0,-1,30.5483,0,0,64384,138875,7966,1325,0.0276317,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-10.scen
+14.3115,2569,2569,2055,2055,0,-1,14.3115,0,0,73331,157799,4764,1325,0.0284942,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-11.scen
+25.0667,2687,2687,2052,2052,0,-1,25.0667,0,0,70675,148501,8244,1325,0.0279622,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-12.scen
+44.5527,3168,3168,2259,2259,0,-1,44.5527,0,0,88161,172569,12645,1325,0.0276877,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-13.scen
+16.9227,2701,2701,2294,2294,0,-1,16.9227,0,0,75552,159270,7128,1325,0.0287979,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-14.scen
+12.8988,2476,2476,2127,2127,0,-1,12.8988,0,0,79664,165992,9242,1325,0.0262296,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-15.scen
+24.0715,2515,2515,1944,1944,0,-1,24.0715,0,0,86502,135778,19146,1325,0.0285511,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-16.scen
+14.7332,2375,2375,1965,1965,0,-1,14.7332,0,0,66378,139441,6684,1325,0.0275075,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-17.scen
+52.4274,2707,2707,1906,1906,0,-1,52.4274,0,0,133754,156064,59296,1325,0.0282147,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-18.scen
+15.8728,2594,2594,2031,2031,0,-1,15.8728,0,0,94560,155829,22042,1325,0.0288873,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-19.scen
+29.6591,2793,2793,2072,2072,0,-1,29.6591,0,0,75593,155206,9276,1325,0.0304709,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-20.scen
+25.2547,2606,2606,1983,1983,0,-1,25.2547,0,0,88958,163549,16002,1325,0.0286886,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-21.scen
+3.5812,0,-1,2136,2136,0,-1,3.5812,0,0,49831,77706,13745,645,0.0276716,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-22.scen
+11.5304,2363,2363,1982,1982,0,-1,11.5304,0,0,69594,144336,7200,1325,0.0259681,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-23.scen
+34.8456,0,-1,2031,2031,0,-1,34.8456,0,0,159838,164865,79635,1258,0.0359384,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-24.scen
+21.6466,2627,2627,2037,2037,0,-1,21.6466,0,0,77716,160580,8957,1325,0.0274241,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-25.scen

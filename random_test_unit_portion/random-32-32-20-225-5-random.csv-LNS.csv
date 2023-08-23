@@ -1,0 +1,15 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+5.4264,0,-1,4968,4968,0,-1,5.4264,0,0,109044,232944,1093,3927,0.11514,LNS(PP;PP),instances/scen-random/random-32-32-20-random-1.scen
+11.5229,0,-1,5003,5003,0,-1,11.5229,0,0,202333,446593,2312,7103,0.132698,LNS(PP;PP),instances/scen-random/random-32-32-20-random-2.scen
+104.154,0,-1,4900,4900,0,-1,104.154,0,0,965316,1777723,124651,20902,0.170389,LNS(PP;PP),instances/scen-random/random-32-32-20-random-3.scen
+114.713,0,-1,4883,4883,0,-1,114.713,0,0,938751,1791265,104266,21013,0.12109,LNS(PP;PP),instances/scen-random/random-32-32-20-random-4.scen
+97.5094,0,-1,5165,5165,0,-1,97.5094,0,0,1047921,1834844,164045,19688,0.186916,LNS(PP;PP),instances/scen-random/random-32-32-20-random-5.scen
+129.963,0,-1,5010,5010,0,-1,129.963,0,0,1154951,1975954,212498,21717,0.124659,LNS(PP;PP),instances/scen-random/random-32-32-20-random-6.scen
+146.56,0,-1,4928,4928,0,-1,146.56,0,0,1016546,1912912,124603,22295,0.124481,LNS(PP;PP),instances/scen-random/random-32-32-20-random-7.scen
+23.0608,0,-1,4947,4947,0,-1,23.0608,0,0,203149,458855,3580,7095,0.130077,LNS(PP;PP),instances/scen-random/random-32-32-20-random-8.scen
+70.9865,0,-1,5075,5075,0,-1,70.9865,0,0,568759,1170518,36806,14292,0.129921,LNS(PP;PP),instances/scen-random/random-32-32-20-random-9.scen
+132.829,6874,6874,4792,4792,0,-1,132.829,0,0,1422965,2273157,292111,25650,0.170144,LNS(PP;PP),instances/scen-random/random-32-32-20-random-10.scen
+50.0163,0,-1,4907,4907,0,-1,50.0163,0,0,463746,964934,26678,12905,0.153106,LNS(PP;PP),instances/scen-random/random-32-32-20-random-11.scen
+35.1456,0,-1,5162,5162,0,-1,35.1456,0,0,402479,869867,17006,11165,0.166198,LNS(PP;PP),instances/scen-random/random-32-32-20-random-12.scen
+4.45725,0,-1,4994,4994,0,-1,4.45725,0,0,85820,185719,241,3365,0.124843,LNS(PP;PP),instances/scen-random/random-32-32-20-random-13.scen
+159.221,7240,7240,5086,5086,0,-1,159.221,0,0,1188741,2181714,156666,25650,0.154433,LNS(PP;PP),instances/scen-random/random-32-32-20-random-14.scen
