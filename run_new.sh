@@ -14,11 +14,11 @@ tl=90000
 # 5 recompute mdd
 # 6 no recompute mdd
 
-for k in $(seq 100 25 225)
+for k in $(seq 150 25 150)
 do
   mode=5
   output=random_test_unit_density/$name-$k-$mode-random.csv
-  for i in $(seq 1 1 25)
+  for i in $(seq 10 1 25)
   do
     echo    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
     ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode

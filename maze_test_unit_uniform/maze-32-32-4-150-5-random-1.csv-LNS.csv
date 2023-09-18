@@ -1,0 +1,4 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+3.40532,0,-1,6778,6778,0,-1,3.40532,0,0,56072,77012,10588,611,0.0778076,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-1.scen
+79.2514,0,-1,6327,6327,0,-1,79.2514,0,0,596017,312711,379427,1608,0.0848327,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-2.scen
+136.315,0,-1,6394,6394,0,-1,136.315,0,0,713870,1008864,87986,4744,0.0774174,LNS(PP;PP),instances/scen-random/maze-32-32-4-random-3.scen

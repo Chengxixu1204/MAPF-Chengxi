@@ -1,0 +1,1542 @@
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 26
+Unit length: 3, Count: 15
+Unit length: 4, Count: 8
+Unit length: 5, Count: 12
+Unit length: 6, Count: 12
+Unit length: 7, Count: 12
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 8
+Unit length: 11, Count: 4
+Unit length: 12, Count: 7
+Unit length: 13, Count: 5
+Unit length: 15, Count: 4
+Unit length: 16, Count: 3
+Unit length: 17, Count: 4
+Unit length: 18, Count: 2
+Unit length: 19, Count: 3
+Unit length: 21, Count: 1
+Unit length: 22, Count: 2
+Unit length: 26, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 25
+Unit length: 3, Count: 13
+Unit length: 4, Count: 8
+Unit length: 5, Count: 13
+Unit length: 6, Count: 11
+Unit length: 7, Count: 10
+Unit length: 8, Count: 8
+Unit length: 9, Count: 4
+Unit length: 10, Count: 7
+Unit length: 11, Count: 6
+Unit length: 12, Count: 7
+Unit length: 13, Count: 7
+Unit length: 14, Count: 2
+Unit length: 15, Count: 5
+Unit length: 16, Count: 4
+Unit length: 17, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 25
+Unit length: 3, Count: 14
+Unit length: 4, Count: 3
+Unit length: 5, Count: 12
+Unit length: 6, Count: 11
+Unit length: 7, Count: 10
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 8
+Unit length: 11, Count: 6
+Unit length: 12, Count: 11
+Unit length: 13, Count: 6
+Unit length: 14, Count: 2
+Unit length: 15, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 13
+Unit length: 4, Count: 3
+Unit length: 5, Count: 8
+Unit length: 6, Count: 7
+Unit length: 7, Count: 9
+Unit length: 8, Count: 6
+Unit length: 9, Count: 4
+Unit length: 10, Count: 4
+Unit length: 11, Count: 3
+Unit length: 12, Count: 4
+Unit length: 13, Count: 2
+Unit length: 20, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 17
+Unit length: 4, Count: 14
+Unit length: 5, Count: 10
+Unit length: 6, Count: 13
+Unit length: 7, Count: 8
+Unit length: 8, Count: 8
+Unit length: 9, Count: 3
+Unit length: 10, Count: 7
+Unit length: 11, Count: 5
+Unit length: 12, Count: 5
+Unit length: 13, Count: 2
+Unit length: 14, Count: 4
+Unit length: 15, Count: 3
+Unit length: 16, Count: 3
+Unit length: 17, Count: 1
+Unit length: 24, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 42
+Unit length: 3, Count: 14
+Unit length: 4, Count: 13
+Unit length: 5, Count: 11
+Unit length: 6, Count: 9
+Unit length: 7, Count: 6
+Unit length: 8, Count: 7
+Unit length: 9, Count: 5
+Unit length: 10, Count: 7
+Unit length: 11, Count: 6
+Unit length: 12, Count: 5
+Unit length: 13, Count: 2
+Unit length: 14, Count: 4
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 42
+Unit length: 3, Count: 14
+Unit length: 4, Count: 10
+Unit length: 5, Count: 11
+Unit length: 6, Count: 10
+Unit length: 7, Count: 6
+Unit length: 8, Count: 5
+Unit length: 9, Count: 2
+Unit length: 10, Count: 9
+Unit length: 11, Count: 5
+Unit length: 12, Count: 4
+Unit length: 13, Count: 2
+Unit length: 14, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 41
+Unit length: 3, Count: 11
+Unit length: 4, Count: 7
+Unit length: 5, Count: 7
+Unit length: 6, Count: 8
+Unit length: 7, Count: 4
+Unit length: 8, Count: 7
+Unit length: 9, Count: 2
+Unit length: 10, Count: 5
+Unit length: 11, Count: 6
+Unit length: 12, Count: 3
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 29
+Unit length: 3, Count: 19
+Unit length: 4, Count: 13
+Unit length: 5, Count: 13
+Unit length: 6, Count: 14
+Unit length: 7, Count: 8
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 5
+Unit length: 11, Count: 6
+Unit length: 12, Count: 5
+Unit length: 13, Count: 1
+Unit length: 14, Count: 1
+Unit length: 15, Count: 4
+Unit length: 16, Count: 2
+Unit length: 17, Count: 3
+Unit length: 18, Count: 2
+Unit length: 19, Count: 1
+Unit length: 20, Count: 1
+Unit length: 21, Count: 1
+Unit length: 23, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 31
+Unit length: 3, Count: 14
+Unit length: 4, Count: 10
+Unit length: 5, Count: 12
+Unit length: 6, Count: 12
+Unit length: 7, Count: 5
+Unit length: 8, Count: 7
+Unit length: 9, Count: 6
+Unit length: 10, Count: 6
+Unit length: 11, Count: 7
+Unit length: 12, Count: 5
+Unit length: 13, Count: 4
+Unit length: 14, Count: 3
+Unit length: 15, Count: 4
+Unit length: 16, Count: 4
+Unit length: 20, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 12
+Unit length: 4, Count: 11
+Unit length: 5, Count: 12
+Unit length: 6, Count: 11
+Unit length: 7, Count: 2
+Unit length: 8, Count: 8
+Unit length: 9, Count: 8
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 4
+Unit length: 13, Count: 3
+Unit length: 14, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 12
+Unit length: 4, Count: 4
+Unit length: 5, Count: 9
+Unit length: 6, Count: 11
+Unit length: 7, Count: 1
+Unit length: 8, Count: 11
+Unit length: 9, Count: 6
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 32
+Unit length: 3, Count: 16
+Unit length: 4, Count: 9
+Unit length: 5, Count: 17
+Unit length: 6, Count: 13
+Unit length: 7, Count: 10
+Unit length: 8, Count: 5
+Unit length: 9, Count: 7
+Unit length: 10, Count: 3
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+Unit length: 14, Count: 4
+Unit length: 15, Count: 2
+Unit length: 16, Count: 6
+Unit length: 17, Count: 1
+Unit length: 18, Count: 1
+Unit length: 19, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 33
+Unit length: 3, Count: 18
+Unit length: 4, Count: 10
+Unit length: 5, Count: 16
+Unit length: 6, Count: 12
+Unit length: 7, Count: 9
+Unit length: 8, Count: 3
+Unit length: 9, Count: 8
+Unit length: 10, Count: 2
+Unit length: 11, Count: 7
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+Unit length: 14, Count: 2
+Unit length: 15, Count: 2
+Unit length: 16, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 15
+Unit length: 4, Count: 8
+Unit length: 5, Count: 12
+Unit length: 6, Count: 8
+Unit length: 7, Count: 10
+Unit length: 8, Count: 5
+Unit length: 9, Count: 3
+Unit length: 10, Count: 7
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+Unit length: 14, Count: 3
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 18
+Unit length: 4, Count: 5
+Unit length: 5, Count: 7
+Unit length: 6, Count: 2
+Unit length: 7, Count: 4
+Unit length: 8, Count: 5
+Unit length: 9, Count: 4
+Unit length: 10, Count: 7
+Unit length: 11, Count: 6
+Unit length: 12, Count: 5
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 27
+Unit length: 3, Count: 12
+Unit length: 4, Count: 15
+Unit length: 5, Count: 11
+Unit length: 6, Count: 11
+Unit length: 7, Count: 11
+Unit length: 8, Count: 6
+Unit length: 9, Count: 10
+Unit length: 10, Count: 4
+Unit length: 11, Count: 2
+Unit length: 12, Count: 3
+Unit length: 13, Count: 5
+Unit length: 14, Count: 6
+Unit length: 15, Count: 5
+Unit length: 16, Count: 2
+Unit length: 17, Count: 4
+Unit length: 18, Count: 1
+Unit length: 19, Count: 3
+Unit length: 20, Count: 1
+Unit length: 22, Count: 1
+Unit length: 23, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 29
+Unit length: 3, Count: 14
+Unit length: 4, Count: 13
+Unit length: 5, Count: 11
+Unit length: 6, Count: 7
+Unit length: 7, Count: 10
+Unit length: 8, Count: 6
+Unit length: 9, Count: 11
+Unit length: 10, Count: 4
+Unit length: 11, Count: 3
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+Unit length: 14, Count: 5
+Unit length: 15, Count: 3
+Unit length: 16, Count: 1
+Unit length: 17, Count: 4
+Unit length: 18, Count: 1
+Unit length: 22, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 32
+Unit length: 3, Count: 14
+Unit length: 4, Count: 12
+Unit length: 5, Count: 10
+Unit length: 6, Count: 6
+Unit length: 7, Count: 8
+Unit length: 8, Count: 5
+Unit length: 9, Count: 13
+Unit length: 10, Count: 6
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 4
+Unit length: 14, Count: 2
+Unit length: 15, Count: 2
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 41
+Unit length: 3, Count: 11
+Unit length: 4, Count: 8
+Unit length: 5, Count: 7
+Unit length: 6, Count: 3
+Unit length: 7, Count: 4
+Unit length: 8, Count: 2
+Unit length: 9, Count: 8
+Unit length: 10, Count: 6
+Unit length: 11, Count: 2
+Unit length: 12, Count: 4
+Unit length: 13, Count: 2
+Unit length: 14, Count: 2
+Unit length: 19, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 34
+Unit length: 3, Count: 20
+Unit length: 4, Count: 19
+Unit length: 5, Count: 5
+Unit length: 6, Count: 10
+Unit length: 7, Count: 10
+Unit length: 8, Count: 8
+Unit length: 9, Count: 4
+Unit length: 10, Count: 3
+Unit length: 11, Count: 8
+Unit length: 12, Count: 2
+Unit length: 13, Count: 2
+Unit length: 14, Count: 3
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+Unit length: 17, Count: 5
+Unit length: 18, Count: 4
+Unit length: 19, Count: 2
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 17
+Unit length: 4, Count: 14
+Unit length: 5, Count: 6
+Unit length: 6, Count: 7
+Unit length: 7, Count: 9
+Unit length: 8, Count: 5
+Unit length: 9, Count: 3
+Unit length: 10, Count: 7
+Unit length: 11, Count: 7
+Unit length: 13, Count: 1
+Unit length: 14, Count: 6
+Unit length: 15, Count: 4
+Unit length: 16, Count: 3
+Unit length: 17, Count: 3
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 47
+Unit length: 3, Count: 20
+Unit length: 4, Count: 11
+Unit length: 5, Count: 4
+Unit length: 6, Count: 4
+Unit length: 7, Count: 7
+Unit length: 8, Count: 4
+Unit length: 9, Count: 5
+Unit length: 10, Count: 5
+Unit length: 11, Count: 5
+Unit length: 12, Count: 3
+Unit length: 13, Count: 3
+Unit length: 14, Count: 1
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 48
+Unit length: 3, Count: 19
+Unit length: 4, Count: 9
+Unit length: 5, Count: 3
+Unit length: 6, Count: 3
+Unit length: 7, Count: 7
+Unit length: 8, Count: 4
+Unit length: 9, Count: 4
+Unit length: 10, Count: 3
+Unit length: 11, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 31
+Unit length: 3, Count: 11
+Unit length: 4, Count: 20
+Unit length: 5, Count: 17
+Unit length: 6, Count: 10
+Unit length: 7, Count: 7
+Unit length: 8, Count: 5
+Unit length: 9, Count: 4
+Unit length: 10, Count: 5
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+Unit length: 13, Count: 1
+Unit length: 14, Count: 4
+Unit length: 15, Count: 4
+Unit length: 16, Count: 8
+Unit length: 17, Count: 3
+Unit length: 18, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 9
+Unit length: 4, Count: 15
+Unit length: 5, Count: 10
+Unit length: 6, Count: 9
+Unit length: 7, Count: 8
+Unit length: 8, Count: 8
+Unit length: 9, Count: 5
+Unit length: 10, Count: 4
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+Unit length: 13, Count: 2
+Unit length: 14, Count: 5
+Unit length: 15, Count: 7
+Unit length: 16, Count: 3
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 45
+Unit length: 3, Count: 16
+Unit length: 4, Count: 8
+Unit length: 5, Count: 9
+Unit length: 6, Count: 10
+Unit length: 7, Count: 6
+Unit length: 8, Count: 6
+Unit length: 9, Count: 4
+Unit length: 10, Count: 3
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 1
+Unit length: 14, Count: 3
+Unit length: 15, Count: 2
+Unit length: 16, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 19
+Unit length: 4, Count: 1
+Unit length: 5, Count: 6
+Unit length: 6, Count: 5
+Unit length: 7, Count: 9
+Unit length: 8, Count: 5
+Unit length: 9, Count: 7
+Unit length: 10, Count: 5
+Unit length: 11, Count: 4
+Unit length: 23, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 13
+Unit length: 4, Count: 12
+Unit length: 5, Count: 17
+Unit length: 6, Count: 7
+Unit length: 7, Count: 7
+Unit length: 8, Count: 8
+Unit length: 9, Count: 7
+Unit length: 10, Count: 1
+Unit length: 11, Count: 3
+Unit length: 12, Count: 5
+Unit length: 13, Count: 7
+Unit length: 14, Count: 6
+Unit length: 15, Count: 2
+Unit length: 17, Count: 3
+Unit length: 18, Count: 4
+Unit length: 21, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 14
+Unit length: 4, Count: 11
+Unit length: 5, Count: 16
+Unit length: 6, Count: 8
+Unit length: 7, Count: 8
+Unit length: 8, Count: 12
+Unit length: 9, Count: 5
+Unit length: 10, Count: 1
+Unit length: 11, Count: 1
+Unit length: 12, Count: 8
+Unit length: 13, Count: 4
+Unit length: 14, Count: 5
+Unit length: 15, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 34
+Unit length: 3, Count: 10
+Unit length: 4, Count: 7
+Unit length: 5, Count: 16
+Unit length: 6, Count: 10
+Unit length: 7, Count: 5
+Unit length: 8, Count: 13
+Unit length: 9, Count: 3
+Unit length: 10, Count: 3
+Unit length: 11, Count: 3
+Unit length: 12, Count: 7
+Unit length: 13, Count: 5
+Unit length: 14, Count: 3
+Unit length: 15, Count: 2
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 12
+Unit length: 4, Count: 4
+Unit length: 5, Count: 7
+Unit length: 6, Count: 8
+Unit length: 7, Count: 7
+Unit length: 8, Count: 4
+Unit length: 9, Count: 2
+Unit length: 10, Count: 7
+Unit length: 11, Count: 3
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 55
+Unit length: 3, Count: 10
+Unit length: 4, Count: 9
+Unit length: 5, Count: 7
+Unit length: 6, Count: 7
+Unit length: 7, Count: 5
+Unit length: 8, Count: 7
+Unit length: 9, Count: 8
+Unit length: 10, Count: 4
+Unit length: 11, Count: 1
+Unit length: 12, Count: 2
+Unit length: 13, Count: 6
+Unit length: 14, Count: 1
+Unit length: 15, Count: 3
+Unit length: 16, Count: 5
+Unit length: 17, Count: 7
+Unit length: 18, Count: 2
+Unit length: 19, Count: 1
+Unit length: 28, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 51
+Unit length: 3, Count: 12
+Unit length: 4, Count: 8
+Unit length: 5, Count: 5
+Unit length: 6, Count: 6
+Unit length: 7, Count: 6
+Unit length: 8, Count: 8
+Unit length: 9, Count: 7
+Unit length: 10, Count: 7
+Unit length: 12, Count: 3
+Unit length: 13, Count: 5
+Unit length: 14, Count: 2
+Unit length: 15, Count: 3
+Unit length: 16, Count: 7
+Unit length: 17, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 56
+Unit length: 3, Count: 12
+Unit length: 4, Count: 6
+Unit length: 5, Count: 7
+Unit length: 6, Count: 5
+Unit length: 7, Count: 5
+Unit length: 8, Count: 6
+Unit length: 9, Count: 3
+Unit length: 10, Count: 5
+Unit length: 11, Count: 2
+Unit length: 12, Count: 2
+Unit length: 13, Count: 4
+Unit length: 14, Count: 2
+Unit length: 15, Count: 5
+Unit length: 16, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 56
+Unit length: 3, Count: 13
+Unit length: 4, Count: 5
+Unit length: 5, Count: 7
+Unit length: 6, Count: 2
+Unit length: 7, Count: 4
+Unit length: 8, Count: 2
+Unit length: 9, Count: 2
+Unit length: 10, Count: 6
+Unit length: 11, Count: 4
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 43
+Unit length: 3, Count: 17
+Unit length: 4, Count: 10
+Unit length: 5, Count: 9
+Unit length: 6, Count: 13
+Unit length: 7, Count: 8
+Unit length: 8, Count: 7
+Unit length: 9, Count: 5
+Unit length: 10, Count: 6
+Unit length: 11, Count: 5
+Unit length: 12, Count: 4
+Unit length: 13, Count: 3
+Unit length: 14, Count: 1
+Unit length: 16, Count: 5
+Unit length: 17, Count: 4
+Unit length: 18, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 45
+Unit length: 3, Count: 16
+Unit length: 4, Count: 8
+Unit length: 5, Count: 7
+Unit length: 6, Count: 13
+Unit length: 7, Count: 8
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 2
+Unit length: 13, Count: 4
+Unit length: 14, Count: 3
+Unit length: 16, Count: 2
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 46
+Unit length: 3, Count: 13
+Unit length: 4, Count: 8
+Unit length: 5, Count: 8
+Unit length: 6, Count: 9
+Unit length: 7, Count: 6
+Unit length: 8, Count: 6
+Unit length: 9, Count: 9
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 4
+Unit length: 13, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 54
+Unit length: 3, Count: 12
+Unit length: 4, Count: 5
+Unit length: 5, Count: 8
+Unit length: 6, Count: 3
+Unit length: 7, Count: 2
+Unit length: 8, Count: 6
+Unit length: 9, Count: 5
+Unit length: 10, Count: 1
+Unit length: 11, Count: 4
+Unit length: 12, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 30
+Unit length: 3, Count: 17
+Unit length: 4, Count: 19
+Unit length: 5, Count: 16
+Unit length: 6, Count: 12
+Unit length: 7, Count: 3
+Unit length: 8, Count: 4
+Unit length: 9, Count: 5
+Unit length: 10, Count: 5
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 1
+Unit length: 14, Count: 3
+Unit length: 15, Count: 3
+Unit length: 16, Count: 2
+Unit length: 17, Count: 4
+Unit length: 18, Count: 3
+Unit length: 19, Count: 2
+Unit length: 21, Count: 1
+Unit length: 22, Count: 1
+Unit length: 23, Count: 2
+Unit length: 26, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 32
+Unit length: 3, Count: 16
+Unit length: 4, Count: 15
+Unit length: 5, Count: 13
+Unit length: 6, Count: 10
+Unit length: 7, Count: 2
+Unit length: 8, Count: 5
+Unit length: 9, Count: 5
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 6
+Unit length: 13, Count: 4
+Unit length: 14, Count: 1
+Unit length: 15, Count: 3
+Unit length: 16, Count: 2
+Unit length: 17, Count: 3
+Unit length: 18, Count: 3
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 33
+Unit length: 3, Count: 17
+Unit length: 4, Count: 14
+Unit length: 5, Count: 10
+Unit length: 6, Count: 9
+Unit length: 7, Count: 3
+Unit length: 8, Count: 4
+Unit length: 9, Count: 5
+Unit length: 10, Count: 3
+Unit length: 11, Count: 8
+Unit length: 12, Count: 6
+Unit length: 13, Count: 2
+Unit length: 14, Count: 2
+Unit length: 15, Count: 3
+Unit length: 16, Count: 1
+Unit length: 28, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 16
+Unit length: 4, Count: 9
+Unit length: 5, Count: 6
+Unit length: 6, Count: 6
+Unit length: 7, Count: 3
+Unit length: 8, Count: 4
+Unit length: 9, Count: 6
+Unit length: 10, Count: 3
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 28
+Unit length: 3, Count: 20
+Unit length: 4, Count: 18
+Unit length: 5, Count: 21
+Unit length: 6, Count: 8
+Unit length: 7, Count: 12
+Unit length: 8, Count: 2
+Unit length: 9, Count: 4
+Unit length: 10, Count: 2
+Unit length: 11, Count: 4
+Unit length: 12, Count: 5
+Unit length: 13, Count: 2
+Unit length: 14, Count: 5
+Unit length: 15, Count: 1
+Unit length: 16, Count: 2
+Unit length: 17, Count: 4
+Unit length: 18, Count: 3
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 32
+Unit length: 3, Count: 13
+Unit length: 4, Count: 19
+Unit length: 5, Count: 13
+Unit length: 6, Count: 6
+Unit length: 7, Count: 16
+Unit length: 8, Count: 2
+Unit length: 9, Count: 2
+Unit length: 10, Count: 2
+Unit length: 11, Count: 3
+Unit length: 13, Count: 7
+Unit length: 14, Count: 6
+Unit length: 15, Count: 3
+Unit length: 16, Count: 1
+Unit length: 17, Count: 5
+Unit length: 18, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 34
+Unit length: 3, Count: 16
+Unit length: 4, Count: 17
+Unit length: 5, Count: 10
+Unit length: 6, Count: 9
+Unit length: 7, Count: 11
+Unit length: 8, Count: 4
+Unit length: 9, Count: 1
+Unit length: 10, Count: 4
+Unit length: 11, Count: 2
+Unit length: 13, Count: 3
+Unit length: 14, Count: 8
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 26
+Unit length: 4, Count: 14
+Unit length: 5, Count: 10
+Unit length: 6, Count: 7
+Unit length: 7, Count: 5
+Unit length: 8, Count: 5
+Unit length: 9, Count: 10
+Unit length: 10, Count: 6
+Unit length: 11, Count: 6
+Unit length: 12, Count: 2
+Unit length: 13, Count: 2
+Unit length: 14, Count: 1
+Unit length: 15, Count: 1
+Unit length: 16, Count: 5
+Unit length: 17, Count: 3
+Unit length: 19, Count: 1
+Unit length: 21, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 22
+Unit length: 4, Count: 13
+Unit length: 5, Count: 12
+Unit length: 6, Count: 8
+Unit length: 7, Count: 7
+Unit length: 8, Count: 3
+Unit length: 9, Count: 11
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 1
+Unit length: 13, Count: 1
+Unit length: 14, Count: 1
+Unit length: 15, Count: 1
+Unit length: 16, Count: 3
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 18
+Unit length: 4, Count: 12
+Unit length: 5, Count: 10
+Unit length: 6, Count: 7
+Unit length: 7, Count: 9
+Unit length: 8, Count: 8
+Unit length: 9, Count: 7
+Unit length: 10, Count: 3
+Unit length: 11, Count: 3
+Unit length: 12, Count: 3
+Unit length: 13, Count: 1
+Unit length: 16, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 15
+Unit length: 4, Count: 7
+Unit length: 5, Count: 10
+Unit length: 6, Count: 6
+Unit length: 7, Count: 9
+Unit length: 8, Count: 4
+Unit length: 9, Count: 4
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 2
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 23
+Unit length: 4, Count: 12
+Unit length: 5, Count: 5
+Unit length: 6, Count: 5
+Unit length: 7, Count: 9
+Unit length: 8, Count: 3
+Unit length: 9, Count: 7
+Unit length: 10, Count: 6
+Unit length: 11, Count: 5
+Unit length: 12, Count: 8
+Unit length: 13, Count: 2
+Unit length: 14, Count: 3
+Unit length: 15, Count: 4
+Unit length: 16, Count: 5
+Unit length: 17, Count: 4
+Unit length: 19, Count: 2
+Unit length: 20, Count: 1
+Unit length: 22, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 43
+Unit length: 3, Count: 18
+Unit length: 4, Count: 8
+Unit length: 5, Count: 6
+Unit length: 6, Count: 7
+Unit length: 7, Count: 7
+Unit length: 8, Count: 3
+Unit length: 9, Count: 5
+Unit length: 10, Count: 7
+Unit length: 11, Count: 6
+Unit length: 12, Count: 9
+Unit length: 13, Count: 1
+Unit length: 14, Count: 3
+Unit length: 15, Count: 3
+Unit length: 16, Count: 2
+Unit length: 17, Count: 2
+Unit length: 18, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 42
+Unit length: 3, Count: 16
+Unit length: 4, Count: 5
+Unit length: 5, Count: 5
+Unit length: 6, Count: 10
+Unit length: 7, Count: 5
+Unit length: 8, Count: 6
+Unit length: 9, Count: 8
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 6
+Unit length: 13, Count: 2
+Unit length: 14, Count: 2
+Unit length: 15, Count: 3
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 17
+Unit length: 4, Count: 9
+Unit length: 5, Count: 10
+Unit length: 6, Count: 6
+Unit length: 7, Count: 2
+Unit length: 8, Count: 4
+Unit length: 9, Count: 1
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 2
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 35
+Unit length: 3, Count: 17
+Unit length: 4, Count: 15
+Unit length: 5, Count: 9
+Unit length: 6, Count: 9
+Unit length: 7, Count: 6
+Unit length: 8, Count: 9
+Unit length: 9, Count: 6
+Unit length: 10, Count: 7
+Unit length: 11, Count: 4
+Unit length: 13, Count: 5
+Unit length: 14, Count: 4
+Unit length: 15, Count: 2
+Unit length: 16, Count: 5
+Unit length: 17, Count: 2
+Unit length: 18, Count: 3
+Unit length: 19, Count: 3
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 17
+Unit length: 4, Count: 16
+Unit length: 5, Count: 7
+Unit length: 6, Count: 9
+Unit length: 7, Count: 5
+Unit length: 8, Count: 9
+Unit length: 9, Count: 5
+Unit length: 10, Count: 7
+Unit length: 11, Count: 4
+Unit length: 13, Count: 3
+Unit length: 14, Count: 2
+Unit length: 15, Count: 1
+Unit length: 16, Count: 4
+Unit length: 17, Count: 4
+Unit length: 25, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 35
+Unit length: 3, Count: 14
+Unit length: 4, Count: 16
+Unit length: 5, Count: 9
+Unit length: 6, Count: 8
+Unit length: 7, Count: 5
+Unit length: 8, Count: 9
+Unit length: 9, Count: 6
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 2
+Unit length: 13, Count: 3
+Unit length: 14, Count: 2
+Unit length: 15, Count: 4
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 15
+Unit length: 4, Count: 7
+Unit length: 5, Count: 7
+Unit length: 6, Count: 6
+Unit length: 7, Count: 5
+Unit length: 8, Count: 2
+Unit length: 9, Count: 3
+Unit length: 10, Count: 8
+Unit length: 11, Count: 6
+Unit length: 12, Count: 1
+Unit length: 13, Count: 1
+Unit length: 16, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 35
+Unit length: 3, Count: 19
+Unit length: 4, Count: 13
+Unit length: 5, Count: 16
+Unit length: 6, Count: 6
+Unit length: 7, Count: 5
+Unit length: 8, Count: 10
+Unit length: 9, Count: 5
+Unit length: 10, Count: 4
+Unit length: 11, Count: 7
+Unit length: 12, Count: 8
+Unit length: 13, Count: 3
+Unit length: 14, Count: 1
+Unit length: 15, Count: 4
+Unit length: 16, Count: 1
+Unit length: 17, Count: 3
+Unit length: 26, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 15
+Unit length: 4, Count: 13
+Unit length: 5, Count: 9
+Unit length: 6, Count: 6
+Unit length: 7, Count: 7
+Unit length: 8, Count: 7
+Unit length: 9, Count: 8
+Unit length: 10, Count: 3
+Unit length: 11, Count: 4
+Unit length: 12, Count: 5
+Unit length: 13, Count: 2
+Unit length: 14, Count: 7
+Unit length: 15, Count: 2
+Unit length: 17, Count: 4
+Unit length: 18, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 44
+Unit length: 3, Count: 17
+Unit length: 4, Count: 9
+Unit length: 5, Count: 5
+Unit length: 6, Count: 6
+Unit length: 7, Count: 5
+Unit length: 8, Count: 9
+Unit length: 9, Count: 8
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 3
+Unit length: 14, Count: 3
+Unit length: 15, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 48
+Unit length: 3, Count: 16
+Unit length: 4, Count: 7
+Unit length: 5, Count: 6
+Unit length: 6, Count: 8
+Unit length: 7, Count: 5
+Unit length: 8, Count: 4
+Unit length: 9, Count: 5
+Unit length: 10, Count: 2
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 32
+Unit length: 3, Count: 20
+Unit length: 4, Count: 10
+Unit length: 5, Count: 11
+Unit length: 6, Count: 10
+Unit length: 7, Count: 10
+Unit length: 8, Count: 5
+Unit length: 9, Count: 4
+Unit length: 10, Count: 6
+Unit length: 11, Count: 3
+Unit length: 12, Count: 4
+Unit length: 13, Count: 4
+Unit length: 14, Count: 8
+Unit length: 15, Count: 3
+Unit length: 16, Count: 3
+Unit length: 17, Count: 4
+Unit length: 18, Count: 2
+Unit length: 19, Count: 1
+Unit length: 20, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 36
+Unit length: 3, Count: 15
+Unit length: 4, Count: 13
+Unit length: 5, Count: 12
+Unit length: 6, Count: 6
+Unit length: 7, Count: 6
+Unit length: 8, Count: 6
+Unit length: 9, Count: 5
+Unit length: 10, Count: 6
+Unit length: 11, Count: 7
+Unit length: 12, Count: 5
+Unit length: 13, Count: 3
+Unit length: 14, Count: 5
+Unit length: 15, Count: 2
+Unit length: 16, Count: 3
+Unit length: 18, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 38
+Unit length: 3, Count: 11
+Unit length: 4, Count: 11
+Unit length: 5, Count: 11
+Unit length: 6, Count: 9
+Unit length: 7, Count: 8
+Unit length: 8, Count: 5
+Unit length: 9, Count: 6
+Unit length: 10, Count: 7
+Unit length: 11, Count: 5
+Unit length: 12, Count: 3
+Unit length: 13, Count: 1
+Unit length: 14, Count: 5
+Unit length: 29, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 13
+Unit length: 4, Count: 7
+Unit length: 5, Count: 8
+Unit length: 6, Count: 6
+Unit length: 7, Count: 6
+Unit length: 8, Count: 5
+Unit length: 9, Count: 5
+Unit length: 10, Count: 6
+Unit length: 11, Count: 5
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 27
+Unit length: 3, Count: 15
+Unit length: 4, Count: 15
+Unit length: 5, Count: 18
+Unit length: 6, Count: 8
+Unit length: 7, Count: 9
+Unit length: 8, Count: 6
+Unit length: 9, Count: 10
+Unit length: 10, Count: 6
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 4
+Unit length: 14, Count: 7
+Unit length: 15, Count: 2
+Unit length: 16, Count: 4
+Unit length: 18, Count: 1
+Unit length: 19, Count: 1
+Unit length: 28, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 34
+Unit length: 3, Count: 13
+Unit length: 4, Count: 12
+Unit length: 5, Count: 14
+Unit length: 6, Count: 8
+Unit length: 7, Count: 8
+Unit length: 8, Count: 6
+Unit length: 9, Count: 9
+Unit length: 10, Count: 7
+Unit length: 11, Count: 2
+Unit length: 12, Count: 5
+Unit length: 13, Count: 3
+Unit length: 14, Count: 6
+Unit length: 15, Count: 3
+Unit length: 19, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 13
+Unit length: 4, Count: 13
+Unit length: 5, Count: 11
+Unit length: 6, Count: 6
+Unit length: 7, Count: 7
+Unit length: 8, Count: 6
+Unit length: 9, Count: 9
+Unit length: 10, Count: 6
+Unit length: 11, Count: 3
+Unit length: 12, Count: 5
+Unit length: 13, Count: 3
+Unit length: 14, Count: 2
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 43
+Unit length: 3, Count: 15
+Unit length: 4, Count: 9
+Unit length: 5, Count: 7
+Unit length: 6, Count: 5
+Unit length: 7, Count: 2
+Unit length: 8, Count: 8
+Unit length: 9, Count: 6
+Unit length: 10, Count: 4
+Unit length: 11, Count: 2
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 29
+Unit length: 3, Count: 19
+Unit length: 4, Count: 8
+Unit length: 5, Count: 18
+Unit length: 6, Count: 14
+Unit length: 7, Count: 5
+Unit length: 8, Count: 15
+Unit length: 9, Count: 4
+Unit length: 10, Count: 7
+Unit length: 11, Count: 1
+Unit length: 12, Count: 5
+Unit length: 13, Count: 3
+Unit length: 14, Count: 5
+Unit length: 15, Count: 2
+Unit length: 16, Count: 3
+Unit length: 18, Count: 3
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 30
+Unit length: 3, Count: 14
+Unit length: 4, Count: 9
+Unit length: 5, Count: 19
+Unit length: 6, Count: 15
+Unit length: 7, Count: 6
+Unit length: 8, Count: 9
+Unit length: 9, Count: 6
+Unit length: 10, Count: 5
+Unit length: 11, Count: 3
+Unit length: 12, Count: 5
+Unit length: 13, Count: 4
+Unit length: 14, Count: 6
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 27
+Unit length: 3, Count: 15
+Unit length: 4, Count: 7
+Unit length: 5, Count: 16
+Unit length: 6, Count: 11
+Unit length: 7, Count: 7
+Unit length: 8, Count: 14
+Unit length: 9, Count: 7
+Unit length: 10, Count: 2
+Unit length: 11, Count: 2
+Unit length: 12, Count: 7
+Unit length: 13, Count: 3
+Unit length: 14, Count: 1
+Unit length: 15, Count: 2
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 34
+Unit length: 3, Count: 14
+Unit length: 4, Count: 3
+Unit length: 5, Count: 12
+Unit length: 6, Count: 8
+Unit length: 7, Count: 9
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 3
+Unit length: 11, Count: 4
+Unit length: 12, Count: 1
+Unit length: 20, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 30
+Unit length: 3, Count: 13
+Unit length: 4, Count: 14
+Unit length: 5, Count: 8
+Unit length: 6, Count: 7
+Unit length: 7, Count: 9
+Unit length: 8, Count: 10
+Unit length: 9, Count: 8
+Unit length: 10, Count: 8
+Unit length: 11, Count: 8
+Unit length: 12, Count: 2
+Unit length: 13, Count: 7
+Unit length: 14, Count: 3
+Unit length: 15, Count: 4
+Unit length: 16, Count: 2
+Unit length: 17, Count: 2
+Unit length: 18, Count: 4
+Unit length: 19, Count: 1
+Unit length: 20, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 29
+Unit length: 3, Count: 9
+Unit length: 4, Count: 13
+Unit length: 5, Count: 7
+Unit length: 6, Count: 11
+Unit length: 7, Count: 9
+Unit length: 8, Count: 13
+Unit length: 9, Count: 8
+Unit length: 10, Count: 6
+Unit length: 11, Count: 5
+Unit length: 12, Count: 3
+Unit length: 13, Count: 5
+Unit length: 14, Count: 5
+Unit length: 15, Count: 4
+Unit length: 16, Count: 4
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 35
+Unit length: 3, Count: 7
+Unit length: 4, Count: 13
+Unit length: 5, Count: 4
+Unit length: 6, Count: 9
+Unit length: 7, Count: 8
+Unit length: 8, Count: 8
+Unit length: 9, Count: 6
+Unit length: 10, Count: 6
+Unit length: 11, Count: 3
+Unit length: 12, Count: 6
+Unit length: 13, Count: 4
+Unit length: 14, Count: 7
+Unit length: 15, Count: 3
+Unit length: 16, Count: 1
+Unit length: 17, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 39
+Unit length: 3, Count: 8
+Unit length: 4, Count: 7
+Unit length: 5, Count: 2
+Unit length: 6, Count: 7
+Unit length: 7, Count: 3
+Unit length: 8, Count: 6
+Unit length: 9, Count: 6
+Unit length: 10, Count: 8
+Unit length: 11, Count: 5
+Unit length: 12, Count: 6
+Unit length: 13, Count: 1
+Unit length: 14, Count: 1
+Unit length: 15, Count: 1
+Unit length: 17, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 19
+Unit length: 4, Count: 7
+Unit length: 5, Count: 9
+Unit length: 6, Count: 2
+Unit length: 7, Count: 12
+Unit length: 8, Count: 7
+Unit length: 9, Count: 4
+Unit length: 10, Count: 4
+Unit length: 11, Count: 3
+Unit length: 12, Count: 8
+Unit length: 13, Count: 2
+Unit length: 14, Count: 1
+Unit length: 15, Count: 5
+Unit length: 16, Count: 4
+Unit length: 17, Count: 4
+Unit length: 19, Count: 1
+Unit length: 20, Count: 3
+Unit length: 21, Count: 5
+Unit length: 22, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 42
+Unit length: 3, Count: 15
+Unit length: 4, Count: 8
+Unit length: 5, Count: 10
+Unit length: 6, Count: 1
+Unit length: 7, Count: 14
+Unit length: 8, Count: 5
+Unit length: 9, Count: 3
+Unit length: 10, Count: 6
+Unit length: 11, Count: 5
+Unit length: 12, Count: 6
+Unit length: 13, Count: 2
+Unit length: 14, Count: 3
+Unit length: 15, Count: 4
+Unit length: 16, Count: 3
+Unit length: 17, Count: 2
+Unit length: 18, Count: 2
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 17
+Unit length: 4, Count: 8
+Unit length: 5, Count: 9
+Unit length: 6, Count: 5
+Unit length: 7, Count: 11
+Unit length: 8, Count: 3
+Unit length: 9, Count: 1
+Unit length: 10, Count: 3
+Unit length: 11, Count: 3
+Unit length: 12, Count: 8
+Unit length: 13, Count: 2
+Unit length: 14, Count: 4
+Unit length: 15, Count: 5
+Unit length: 16, Count: 1
+Unit length: 22, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 44
+Unit length: 3, Count: 17
+Unit length: 4, Count: 5
+Unit length: 5, Count: 3
+Unit length: 6, Count: 6
+Unit length: 7, Count: 6
+Unit length: 8, Count: 3
+Unit length: 9, Count: 2
+Unit length: 10, Count: 7
+Unit length: 11, Count: 2
+Unit length: 12, Count: 5
+Unit length: 15, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 53
+Unit length: 3, Count: 11
+Unit length: 4, Count: 10
+Unit length: 5, Count: 9
+Unit length: 6, Count: 12
+Unit length: 7, Count: 6
+Unit length: 8, Count: 6
+Unit length: 9, Count: 3
+Unit length: 10, Count: 4
+Unit length: 11, Count: 5
+Unit length: 12, Count: 3
+Unit length: 13, Count: 4
+Unit length: 14, Count: 3
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+Unit length: 17, Count: 4
+Unit length: 19, Count: 2
+Unit length: 20, Count: 2
+Unit length: 22, Count: 1
+Unit length: 25, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 41
+Unit length: 3, Count: 17
+Unit length: 4, Count: 14
+Unit length: 5, Count: 9
+Unit length: 6, Count: 10
+Unit length: 7, Count: 11
+Unit length: 8, Count: 3
+Unit length: 9, Count: 4
+Unit length: 10, Count: 4
+Unit length: 11, Count: 4
+Unit length: 12, Count: 3
+Unit length: 13, Count: 3
+Unit length: 14, Count: 6
+Unit length: 15, Count: 3
+Unit length: 16, Count: 2
+Unit length: 17, Count: 4
+Unit length: 18, Count: 3
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 41
+Unit length: 3, Count: 10
+Unit length: 4, Count: 11
+Unit length: 5, Count: 13
+Unit length: 6, Count: 13
+Unit length: 7, Count: 11
+Unit length: 8, Count: 6
+Unit length: 9, Count: 9
+Unit length: 10, Count: 3
+Unit length: 11, Count: 1
+Unit length: 12, Count: 4
+Unit length: 13, Count: 2
+Unit length: 14, Count: 5
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 41
+Unit length: 3, Count: 13
+Unit length: 4, Count: 8
+Unit length: 5, Count: 10
+Unit length: 6, Count: 14
+Unit length: 7, Count: 10
+Unit length: 8, Count: 4
+Unit length: 9, Count: 11
+Unit length: 10, Count: 3
+Unit length: 11, Count: 2
+Unit length: 12, Count: 3
+Unit length: 13, Count: 1
+Unit length: 20, Count: 1
+
+After 10 function calls, the unit width level distribution is:
+Unit length: 2, Count: 29
+Unit length: 3, Count: 19
+Unit length: 4, Count: 15
+Unit length: 5, Count: 5
+Unit length: 6, Count: 9
+Unit length: 7, Count: 7
+Unit length: 8, Count: 7
+Unit length: 9, Count: 10
+Unit length: 10, Count: 8
+Unit length: 11, Count: 8
+Unit length: 12, Count: 5
+Unit length: 13, Count: 4
+Unit length: 14, Count: 5
+Unit length: 15, Count: 2
+Unit length: 16, Count: 4
+Unit length: 17, Count: 1
+Unit length: 18, Count: 2
+Unit length: 19, Count: 1
+
+After 20 function calls, the unit width level distribution is:
+Unit length: 2, Count: 37
+Unit length: 3, Count: 18
+Unit length: 4, Count: 14
+Unit length: 5, Count: 5
+Unit length: 6, Count: 9
+Unit length: 7, Count: 7
+Unit length: 8, Count: 5
+Unit length: 9, Count: 9
+Unit length: 10, Count: 5
+Unit length: 11, Count: 6
+Unit length: 12, Count: 4
+Unit length: 13, Count: 5
+Unit length: 14, Count: 5
+Unit length: 15, Count: 2
+
+After 30 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 14
+Unit length: 4, Count: 12
+Unit length: 5, Count: 8
+Unit length: 6, Count: 7
+Unit length: 7, Count: 4
+Unit length: 8, Count: 4
+Unit length: 9, Count: 10
+Unit length: 10, Count: 3
+Unit length: 11, Count: 5
+Unit length: 12, Count: 6
+Unit length: 13, Count: 5
+Unit length: 14, Count: 1
+Unit length: 16, Count: 1
+Unit length: 27, Count: 1
+
+After 50 function calls, the unit width level distribution is:
+Unit length: 2, Count: 40
+Unit length: 3, Count: 16
+Unit length: 4, Count: 7
+Unit length: 5, Count: 6
+Unit length: 6, Count: 6
+Unit length: 7, Count: 6
+Unit length: 8, Count: 4
+Unit length: 9, Count: 7
+Unit length: 10, Count: 2
+Unit length: 11, Count: 3
+Unit length: 12, Count: 1
+Unit length: 13, Count: 1
+Unit length: 15, Count: 1
+Unit length: 16, Count: 1
+

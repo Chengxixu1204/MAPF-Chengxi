@@ -5,6 +5,9 @@
 #include <cstdio>
 #include <ctime>   // For seeding
 #include <cstdlib> // For std::rand and std::srand
+#include <chrono>
+#include <random>
+#include <fstream>
 
 LNS::LNS(const Instance &instance, double time_limit, const string &init_algo_name, const string &replan_algo_name,
          const string &destory_name, int neighbor_size, int num_of_iterations, bool use_init_lns,
@@ -426,6 +429,48 @@ int LNS::selectAgentBasedonShortestPath(set<int> &remaining_agents_set, Constrai
     return selected_agent;
 }
 
+int readCurrentScenario()
+{
+    int scenario;
+    std::ifstream infile("current_scenario.txt");
+    if (infile.is_open())
+    {
+        infile >> scenario;
+        infile.close();
+    }
+    else
+    {
+        scenario = 0;
+    }
+    return scenario;
+}
+
+void writeCurrentScenario(int scenario)
+{
+    std::ofstream outfile("current_scenario.txt");
+    if (outfile.is_open())
+    {
+        outfile << scenario;
+        outfile.close();
+    }
+}
+
+void updateFunctionCallCount(int &function_call_count, int &current_scenario)
+{
+    std::ifstream infile("state.txt");
+    infile >> function_call_count >> current_scenario;
+    infile.close();
+    ++function_call_count;
+    if (function_call_count >= 125)
+    {
+        function_call_count = 0;
+        ++current_scenario;
+    }
+    std::ofstream outfile("state.txt");
+    outfile << function_call_count << " " << current_scenario;
+    outfile.close();
+}
+
 int LNS::selectAgentBasedonMDD(set<int> &remaining_agents_set, ConstraintTable &constraint_table, int mode)
 {
     // int selected_agent = -1;
@@ -644,6 +689,64 @@ int LNS::selectAgentBasedonMDD(set<int> &remaining_agents_set, ConstraintTable &
     // printf("selection done: selected agent %d\n", selected_agent);
     // return selected_agent;
 
+    // int function_call_count = 0;
+    // int current_scenario = 0;
+    // updateFunctionCallCount(function_call_count, current_scenario);
+    // unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    // std::mt19937 gen(seed);
+    // std::map<int, int> unit_length_distribution;
+    // unit_length_distribution.clear();
+    // int selected_agent = -1;
+    // std::vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_width_levels = -1;
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     int id = id_list[i];
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty())
+    //     {
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
+    //     int unit_width_levels = 0;
+    //     for (auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //             unit_width_levels += 1;
+    //     }
+    //     if (unit_length_distribution.find(unit_width_levels) == unit_length_distribution.end())
+    //     {
+    //         unit_length_distribution[unit_width_levels] = 1;
+    //     }
+    //     else
+    //     {
+    //         unit_length_distribution[unit_width_levels]++;
+    //     }
+    //     std::uniform_int_distribution<> dist(0, 1);
+    //     int random_val = dist(gen);
+    //     if (max_unit_width_levels < unit_width_levels || (max_unit_width_levels == unit_width_levels && random_val))
+    //     {
+    //         selected_agent = id;
+    //         max_unit_width_levels = unit_width_levels;
+    //     }
+    //     if (function_call_count == 10 || function_call_count == 20 || function_call_count == 30 || function_call_count == 40 || function_call_count == 50)
+    //     {
+    //         std::ofstream outfile;
+    //         std::string filename = "unit_lengths_after_" + std::to_string(function_call_count) + "_agents_scenario_" + std::to_string(current_scenario) + ".txt";
+    //         outfile.open(filename);
+    //         for (const auto &kv : unit_length_distribution)
+    //         {
+    //             outfile << "Unit length: " << kv.first << ", Count: " << kv.second << "\n";
+    //         }
+    //         outfile.close();
+    //     }
+    // }
+    // return selected_agent;
+
     // int selected_agent = -1;
     // vector<int> id_list;
     // for (auto id : remaining_agents_set)
@@ -685,425 +788,664 @@ int LNS::selectAgentBasedonMDD(set<int> &remaining_agents_set, ConstraintTable &
 
     // printf("selection done: selected agent %d\n", selected_agent);
     // return selected_agent;
-    int selected_agent = -1;
-    std::vector<int> id_list;
-    //std::set<int> remaining_agents_set; // Dummy initialization for now
-    for (auto id : remaining_agents_set)
-    {
-        id_list.push_back(id);
-    }
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
 
-    int num_remaining_agents = int(id_list.size());
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_width_levels = -1; // Initialize to a value that will be smaller than any possible count
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
+
+    //     int unit_width_levels = 0;
+    //     for (auto &level : agents[id].mdd.levels)
+    //         if (level.size() == 1) // This level is of unit-width
+    //             unit_width_levels += 1;
+
+    //     if (max_unit_width_levels <= unit_width_levels)
+    //     {
+    //         selected_agent = id;
+    //         max_unit_width_levels = unit_width_levels;
+    //     }
+
+    //     printf("built mdd for agesnt %d (%d) with unit-width levels %d\n", id, agents[id].id, unit_width_levels);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d\n", selected_agent);
+    // return selected_agent;
+
+
+    std::vector<int> agents_with_max_unit_width;
     int max_unit_width_levels = -1;
-    std::map<int, int> agent_unit_lengths;
 
-    std::ofstream outfile;
+    // std::ifstream inputFile("counter.txt");  // Open the counter file for reading
+    // int counter = 0;
 
-    for (int i = 0; i < num_remaining_agents; i++)
+    // // If the file successfully opened, read the current counter value
+    // if(inputFile.is_open()) {
+    //     inputFile >> counter;
+    //     inputFile.close();  // Close the file after reading the value
+    // } else {
+    //     // If the file couldn't be opened, it might not exist yet,
+    //     // so we'll start the counter at 0
+    //     counter = 0;
+    // }
+
+    // // Increment the counter value
+    // counter++;
+
+    // std::ofstream outputFile("counter.txt");  // Open the counter file for writing
+
+    // // If the file successfully opened, write the new counter value
+    // if(outputFile.is_open()) {
+    //     outputFile << counter;
+    //     outputFile.close();  // Close the file after writing the new value
+    // } else {
+    //     // If the file couldn't be opened for writing, print an error message
+    //     std::cerr << "Error: could not open counter.txt for writing" << std::endl;
+    //     return 1;
+    // }
+
+    std::vector<int> id_list; // assume this list will be filled
+    for (auto id : remaining_agents_set)
+        id_list.push_back(id);
+    
+    int num_remaining_agents = int(id_list.size());
+
+    // Declare static variables to retain the values across multiple function calls
+    std::map<int, int> unit_width_level_counts;
+    static int call_count = 0;
+
+    for (int i = 0; i < num_remaining_agents; ++i)
     {
         printf("Iteration %d ", i);
         int id = id_list[i];
+        
         printf("start agent %d of %d;", id, remaining_agents_set.size());
-
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-        {
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
-        }
-
-        int unit_width_levels = 0;
-        for (auto &level : agents[id].mdd.levels)
-        {
-            if (level.size() == 1)
-            { // This level is of unit-width
-                unit_width_levels += 1;
-            }
-        }
-
-        agent_unit_lengths[id] = unit_width_levels;
-
-        if (max_unit_width_levels < unit_width_levels)
-        {
-            selected_agent = id;
-            max_unit_width_levels = unit_width_levels;
-        }
-
-        printf("built MDD for agent %d (%d) with unit-width levels %d\n", id, agents[id].id, unit_width_levels);
-
-        if (i == 9 || i == 19 || i == 29 || i == 39)
-        {
-            outfile.open("unit_lengths_after_" + std::to_string(i + 1) + "_agents.txt");
-
-            if (!outfile.is_open())
-            {
-                std::cerr << "Failed to open output file." << std::endl;
-                return -1;
-            }
-
-            outfile << "After processing " << i + 1 << " agents:\n";
-            for (int j = i + 1; j < num_remaining_agents; j++)
-            {
-                int remaining_id = id_list[j];
-                outfile << "Agent " << remaining_id << " has " << agent_unit_lengths[remaining_id] << " unit-width levels.\n";
-            }
-
-            outfile.close();
-        }
-
-        if (mode != 6)
-        {
-            agents[id].mdd.clear();
-        }
-    }
-
-    printf("selection done: selected agent %d\n", selected_agent);
-    return selected_agent;
-
-    //unit length/total num of layer
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
-
-    int num_remaining_agents = int(id_list.size());
-    double max_score = -1.0; // Initialize to a value that will be smaller than any possible score
-
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        printf("Iteration %d ", i);
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_score); // Adjusted parameter
-
-        int unit_width_levels = 0;
-        int total_levels = agents[id].mdd.levels.size();
-        for (auto &level : agents[id].mdd.levels)
-            if (level.size() == 1) // This level is of unit-width
-                unit_width_levels += 1;
-
-        double score = (total_levels > 0) ? static_cast<double>(unit_width_levels) / total_levels : 0;
-
-        if (max_score < score)
-        {
-            selected_agent = id;
-            max_score = score;
-        }
-
-        printf("built mdd for agent %d (%d) with score %lf\n", id, agents[id].id, score);
-
-        if (mode != 6)
-            agents[id].mdd.clear();
-    }
-
-    printf("selection done: selected agent %d\n", selected_agent);
-    return selected_agent;
-
-    //unit length + unit length/total layer
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
-
-    int num_remaining_agents = int(id_list.size());
-    int max_unit_lengths = -1; // Initialize to a value that will be smaller than any possible count
-    double max_ratio = -1.0;   // Initialize to a value that will be smaller than any possible ratio
-
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        printf("Iteration %d ", i);
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
-
-        int unit_width_levels = 0;
-        int total_levels = agents[id].mdd.levels.size();
-
-        for (auto &level : agents[id].mdd.levels)
-        {
-            if (level.size() == 1)
-                unit_width_levels += 1;
-        }
-
-        double unit_length_ratio = static_cast<double>(unit_width_levels) / total_levels;
-
-        if (max_unit_lengths < unit_width_levels ||
-            (max_unit_lengths == unit_width_levels && max_ratio < unit_length_ratio))
-        {
-            selected_agent = id;
-            max_unit_lengths = unit_width_levels;
-            max_ratio = unit_length_ratio;
-        }
-
-        printf("built mdd for agent %d (%d) with unit lengths %d and ratio %lf\n", id, agents[id].id, unit_width_levels, unit_length_ratio);
-
-        if (mode != 6)
-            agents[id].mdd.clear();
-    }
-
-    printf("selection done: selected agent %d with max unit lengths %d and max ratio %lf\n", selected_agent, max_unit_lengths, max_ratio);
-    return selected_agent;
-
-
-
-    //unit length + density
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
-
-    int num_remaining_agents = int(id_list.size());
-    double max_score = -1.0; // For the combined score
-
-    const int WINDOW_SIZE = 10; // Adjust as needed
-    const double W1 = 1.0;     // Weight for total unit lengths
-    const double W2 = 0.5;    // Weight for max local density
-
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-
         agents[id].path = agents[id].path_planner->findPath(constraint_table);
         if (agents[id].path.empty())
         {
             printf("No valid path found for agent %d. Exiting.\n", id);
             return -1;
         }
-
         if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
 
-        int total_unit_lengths = 0;
-        for (const auto &level : agents[id].mdd.levels)
+        int unit_width_levels = 0;
+        for (auto &level : agents[id].mdd.levels)
         {
             if (level.size() == 1)
             {
-                total_unit_lengths++;
+                unit_width_levels += 1;
             }
         }
 
-        double max_local_density = 0.0;
-        for (int j = 0; j < agents[id].mdd.levels.size(); j++)
+        unit_width_level_counts[unit_width_levels]++;
+        
+        if (unit_width_levels > max_unit_width_levels)
         {
-            int window_end = std::min(j + WINDOW_SIZE, static_cast<int>(agents[id].mdd.levels.size()));
-            int count = 0;
-            for (int k = j; k < window_end; k++)
+            max_unit_width_levels = unit_width_levels;
+            agents_with_max_unit_width.clear();
+            agents_with_max_unit_width.push_back(id);
+        }
+        else if (unit_width_levels == max_unit_width_levels)
+        {
+            agents_with_max_unit_width.push_back(id);
+        }
+
+        if (mode != 6)
+        {
+            agents[id].mdd.clear();
+        }
+    }
+
+    call_count++;
+    std::ofstream outfile;
+    if (call_count == 10 || call_count == 20 || call_count == 30 || call_count == 50)
+    {
+        
+        outfile.open("unit_width_distributions_scen1.txt", std::ios_base::app);
+        outfile << "After " << call_count << " function calls, the unit width level distribution is:\n";
+        for (const auto& [unit_length, count] : unit_width_level_counts)
+        {
+            if (count > 0)
             {
-                if (agents[id].mdd.levels[k].size() == 1)
-                    count++;
+                outfile << "Unit length: " << unit_length << ", Count: " << count << "\n";
             }
-            double local_density = static_cast<double>(count) / WINDOW_SIZE;
-            max_local_density = std::max(max_local_density, local_density);
         }
-
-        double score = W1 * total_unit_lengths + W2 * max_local_density;
-        if (score > max_score)
-        {
-            selected_agent = id;
-            max_score = score;
-        }
-
-        printf("built mdd for agent %d (%d) with total unit lengths %d, max local density %lf, and score %lf\n", id, agents[id].id, total_unit_lengths, max_local_density, score);
-
-        if (mode != 6)
-            agents[id].mdd.clear();
+        outfile << "\n";
+        outfile.close();
     }
+    // outfile.open("unit_width_distributions_scen1.txt", std::ios_base::app);
+    // outfile << " Start of next Scenario\n";
 
-    printf("selection done: selected agent %d with max score %lf\n", selected_agent, max_score);
-    return selected_agent;
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::default_random_engine generator(seed);
 
+    std::uniform_int_distribution<int> distribution(0, agents_with_max_unit_width.size() - 1);
+    int random_index = distribution(generator);
 
-    //unit length + gradient
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
+    int selected_agent = agents_with_max_unit_width[random_index];
 
-    int num_remaining_agents = int(id_list.size());
-    int max_unit_width_levels = -1;
-    double max_gradient = -INFINITY;
+    std::cout << "Selected agent: " << selected_agent << std::endl;
 
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        printf("Iteration %d ", i);
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+    return selected_agent; 
 
-        int unit_width_levels = 0;
-        for (auto &level : agents[id].mdd.levels)
-            if (level.size() == 1)
-                unit_width_levels += 1;
+    //     std::vector<int> agents_with_max_unit_width;
+    //     int max_unit_width_levels = -1;
 
-        int prev_layer_size = agents[id].mdd.levels.empty() ? 0 : agents[id].mdd.levels[0].size();
-        double current_gradient = 0;
-        for (int depth = 1; depth < agents[id].mdd.levels.size(); depth++) // Start from 1 since we need the previous layer to compute gradient
-        {
-            int current_layer_size = agents[id].mdd.levels[depth].size();
-            double gradient = static_cast<double>(prev_layer_size - current_layer_size);
-            if (gradient > current_gradient)
-                current_gradient = gradient;
+    //     std::vector<int> id_list; // assume this list will be filled
+    //     for (auto id : remaining_agents_set) id_list.push_back(id);
 
-            prev_layer_size = current_layer_size;
-        }
+    //     int num_remaining_agents = int(id_list.size());
 
-        // Check for max unit width levels and update selected agent and max gradient only if we have a tie
-        if (unit_width_levels > max_unit_width_levels || (unit_width_levels == max_unit_width_levels && current_gradient > max_gradient))
-        {
-            selected_agent = id;
-            max_unit_width_levels = unit_width_levels;
-            max_gradient = current_gradient;
-        }
+    //     for (int i = 0; i < num_remaining_agents; ++i) {
+    //         printf("Iteration %d ", i);
+    //         int id = id_list[i];
+    //         printf("start agent %d of %d;", id, remaining_agents_set.size());
 
-        printf("built mdd for agent %d (%d) with unit-width levels %d and gradient %lf\n", id, agents[id].id, unit_width_levels, current_gradient);
+    //         agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //         if (agents[id].path.empty()) {
+    //             printf("No valid path found for agent %d. Exiting.\n", id);
+    //             return -1;
+    //         }
 
-        if (mode != 6)
-            agents[id].mdd.clear();
-    }
+    //         if (agents[id].mdd.levels.empty() || mode == 5)
+    //             agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
 
-    printf("selection done: selected agent %d with max unit-width levels %d and gradient %lf\n", selected_agent, max_unit_width_levels, max_gradient);
-    return selected_agent;
+    //         // Calculate unit_width_levels
+    //         int unit_width_levels = 0;
+    //         for (auto &level : agents[id].mdd.levels) {
+    //             if (level.size() == 1) {  // This level is of unit-width
+    //                 unit_width_levels += 1;
+    //             }
+    //         }
 
+    //         if (unit_width_levels > max_unit_width_levels) {
+    //             max_unit_width_levels = unit_width_levels;
+    //             agents_with_max_unit_width.clear();
+    //             agents_with_max_unit_width.push_back(id);
+    //         } else if (unit_width_levels == max_unit_width_levels) {
+    //             agents_with_max_unit_width.push_back(id);
+    //         }
+    //         if (mode != 6) {
+    //             agents[id].mdd.clear();
+    //         }
+    //     }
 
-    //unit length + 0.5*2unit + 0.25*3unit
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
+    // // Always pick the first agent from agents_with_max_unit_width
+    //     int selected_agent;
+    //     if (!agents_with_max_unit_width.empty()) {
+    //         selected_agent = agents_with_max_unit_width[0];
+    //     } else {
+    //         printf("No agents found with max unit-width levels. Exiting.\n");
+    //         return -1;
+    //     }
 
-    int num_remaining_agents = int(id_list.size());
-    double max_score = -1.0; // Initialize to a value that will be smaller than any possible score
+    //     std::cout << "Selected agent: " << selected_agent << std::endl;
 
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        printf("Iteration %d ", i);
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+    //     return selected_agent;
 
-        int unit_width_levels = 0;
-        int two_unit_width_levels = 0;
-        int three_unit_width_levels = 0;
+    // int selected_agent = -1;
+    // std::vector<int> id_list;
+    // //std::set<int> remaining_agents_set; // Dummy initialization for now
+    // for (auto id : remaining_agents_set)
+    // {
+    //     id_list.push_back(id);
+    // }
 
-        for (auto &level : agents[id].mdd.levels)
-        {
-            if (level.size() == 1)
-                unit_width_levels += 1;
-            else if (level.size() == 2)
-                two_unit_width_levels += 1;
-            else if (level.size() == 3)
-                three_unit_width_levels += 1;
-        }
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_width_levels = -1;
+    // std::map<int, int> agent_unit_lengths;
 
-        double score = unit_width_levels + (two_unit_width_levels * 0.5) + (three_unit_width_levels * (1.0 / 4.0));
+    // std::ofstream outfile;
 
-        if (max_score < score)
-        {
-            selected_agent = id;
-            max_score = score;
-        }
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
 
-        printf("built mdd for agent %d (%d) with score %lf\n", id, agents[id].id, score);
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //     {
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_unit_width_levels);
+    //     }
 
-        if (mode != 6)
-            agents[id].mdd.clear();
-    }
+    //     int unit_width_levels = 0;
+    //     for (auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //         { // This level is of unit-width
+    //             unit_width_levels += 1;
+    //         }
+    //     }
 
-    printf("selection done: selected agent %d with max score %lf\n", selected_agent, max_score);
-    return selected_agent;
+    //     agent_unit_lengths[id] = unit_width_levels;
 
-    // Select agent with the max num of unit length, when there is a tie, select the agent with the max 2-unit length num, if still the same, select the one with the most 3unit length num
+    //     if (max_unit_width_levels < unit_width_levels)
+    //     {
+    //         selected_agent = id;
+    //         max_unit_width_levels = unit_width_levels;
+    //     }
 
-    int selected_agent = -1;
-    vector<int> id_list;
-    for (auto id : remaining_agents_set)
-        id_list.push_back(id);
+    //     printf("built MDD for agent %d (%d) with unit-width levels %d\n", id, agents[id].id, unit_width_levels);
 
-    int num_remaining_agents = int(id_list.size());
-    int max_unit_width_levels = -1;
-    int max_two_unit_width_levels = -1;
-    int max_three_unit_width_levels = -1;
+    //     if (i == 9 || i == 19 || i == 29 || i == 39)
+    //     {
+    //         outfile.open("unit_lengths_after_" + std::to_string(i + 1) + "_agents.txt");
 
-    for (int i = 0; i < num_remaining_agents; i++)
-    {
-        printf("Iteration %d ", i);
-        int id = id_list[i];
-        printf("start agent %d of %d;", id, remaining_agents_set.size());
-        agents[id].path = agents[id].path_planner->findPath(constraint_table);
-        if (agents[id].path.empty()) // Check if path is valid and non-empty
-        {
-            printf("No valid path found for agent %d. Exiting.\n", id);
-            return -1;
-        }
-        if (agents[id].mdd.levels.empty() || mode == 5)
-            agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+    //         if (!outfile.is_open())
+    //         {
+    //             std::cerr << "Failed to open output file." << std::endl;
+    //             return -1;
+    //         }
 
-        int unit_width_levels = 0;
-        int two_unit_width_levels = 0;
-        int three_unit_width_levels = 0;
+    //         outfile << "After processing " << i + 1 << " agents:\n";
+    //         for (int j = i + 1; j < num_remaining_agents; j++)
+    //         {
+    //             int remaining_id = id_list[j];
+    //             outfile << "Agent " << remaining_id << " has " << agent_unit_lengths[remaining_id] << " unit-width levels.\n";
+    //         }
 
-        for (auto &level : agents[id].mdd.levels)
-        {
-            if (level.size() == 1)
-                unit_width_levels += 1;
-            else if (level.size() == 2)
-                two_unit_width_levels += 1;
-            else if (level.size() == 3)
-                three_unit_width_levels += 1;
-        }
+    //         outfile.close();
+    //     }
 
-        if (unit_width_levels > max_unit_width_levels ||
-            (unit_width_levels == max_unit_width_levels && two_unit_width_levels > max_two_unit_width_levels) ||
-            (unit_width_levels == max_unit_width_levels && two_unit_width_levels == max_two_unit_width_levels && three_unit_width_levels > max_three_unit_width_levels))
-        {
-            selected_agent = id;
-            max_unit_width_levels = unit_width_levels;
-            max_two_unit_width_levels = two_unit_width_levels;
-            max_three_unit_width_levels = three_unit_width_levels;
-        }
+    //     if (mode != 6)
+    //     {
+    //         agents[id].mdd.clear();
+    //     }
+    // }
 
-        printf("built mdd for agent %d (%d) with unit-width levels %d, 2-unit %d, and 3-unit %d\n", id, agents[id].id, unit_width_levels, two_unit_width_levels, three_unit_width_levels);
+    // printf("selection done: selected agent %d\n", selected_agent);
+    // return selected_agent;
 
-        if (mode != 6)
-            agents[id].mdd.clear();
-    }
+    // //unit length/total num of layer
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
 
-    printf("selection done: selected agent %d\n", selected_agent);
-    return selected_agent;
+    // int num_remaining_agents = int(id_list.size());
+    // double max_score = -1.0; // Initialize to a value that will be smaller than any possible score
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner, max_score); // Adjusted parameter
+
+    //     int unit_width_levels = 0;
+    //     int total_levels = agents[id].mdd.levels.size();
+    //     for (auto &level : agents[id].mdd.levels)
+    //         if (level.size() == 1) // This level is of unit-width
+    //             unit_width_levels += 1;
+
+    //     double score = (total_levels > 0) ? static_cast<double>(unit_width_levels) / total_levels : 0;
+
+    //     if (max_score < score)
+    //     {
+    //         selected_agent = id;
+    //         max_score = score;
+    //     }
+
+    //     printf("built mdd for agent %d (%d) with score %lf\n", id, agents[id].id, score);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d\n", selected_agent);
+    // return selected_agent;
+
+    // //unit length + unit length/total layer
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_lengths = -1; // Initialize to a value that will be smaller than any possible count
+    // double max_ratio = -1.0;   // Initialize to a value that will be smaller than any possible ratio
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+
+    //     int unit_width_levels = 0;
+    //     int total_levels = agents[id].mdd.levels.size();
+
+    //     for (auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //             unit_width_levels += 1;
+    //     }
+
+    //     double unit_length_ratio = static_cast<double>(unit_width_levels) / total_levels;
+
+    //     if (max_unit_lengths < unit_width_levels ||
+    //         (max_unit_lengths == unit_width_levels && max_ratio < unit_length_ratio))
+    //     {
+    //         selected_agent = id;
+    //         max_unit_lengths = unit_width_levels;
+    //         max_ratio = unit_length_ratio;
+    //     }
+
+    //     printf("built mdd for agent %d (%d) with unit lengths %d and ratio %lf\n", id, agents[id].id, unit_width_levels, unit_length_ratio);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d with max unit lengths %d and max ratio %lf\n", selected_agent, max_unit_lengths, max_ratio);
+    // return selected_agent;
+
+    // //unit length + density
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+
+    // int num_remaining_agents = int(id_list.size());
+    // double max_score = -1.0; // For the combined score
+
+    // const int WINDOW_SIZE = 10; // Adjust as needed
+    // const double W1 = 1.0;     // Weight for total unit lengths
+    // const double W2 = 0.5;    // Weight for max local density
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty())
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+
+    //     int total_unit_lengths = 0;
+    //     for (const auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //         {
+    //             total_unit_lengths++;
+    //         }
+    //     }
+
+    //     double max_local_density = 0.0;
+    //     for (int j = 0; j < agents[id].mdd.levels.size(); j++)
+    //     {
+    //         int window_end = std::min(j + WINDOW_SIZE, static_cast<int>(agents[id].mdd.levels.size()));
+    //         int count = 0;
+    //         for (int k = j; k < window_end; k++)
+    //         {
+    //             if (agents[id].mdd.levels[k].size() == 1)
+    //                 count++;
+    //         }
+    //         double local_density = static_cast<double>(count) / WINDOW_SIZE;
+    //         max_local_density = std::max(max_local_density, local_density);
+    //     }
+
+    //     double score = W1 * total_unit_lengths + W2 * max_local_density;
+    //     if (score > max_score)
+    //     {
+    //         selected_agent = id;
+    //         max_score = score;
+    //     }
+
+    //     printf("built mdd for agent %d (%d) with total unit lengths %d, max local density %lf, and score %lf\n", id, agents[id].id, total_unit_lengths, max_local_density, score);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d with max score %lf\n", selected_agent, max_score);
+    // return selected_agent;
+
+    // //unit length + gradient
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_width_levels = -1;
+    // double max_gradient = -INFINITY;
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+
+    //     int unit_width_levels = 0;
+    //     for (auto &level : agents[id].mdd.levels)
+    //         if (level.size() == 1)
+    //             unit_width_levels += 1;
+
+    //     int prev_layer_size = agents[id].mdd.levels.empty() ? 0 : agents[id].mdd.levels[0].size();
+    //     double current_gradient = 0;
+    //     for (int depth = 1; depth < agents[id].mdd.levels.size(); depth++) // Start from 1 since we need the previous layer to compute gradient
+    //     {
+    //         int current_layer_size = agents[id].mdd.levels[depth].size();
+    //         double gradient = static_cast<double>(prev_layer_size - current_layer_size);
+    //         if (gradient > current_gradient)
+    //             current_gradient = gradient;
+
+    //         prev_layer_size = current_layer_size;
+    //     }
+
+    //     // Check for max unit width levels and update selected agent and max gradient only if we have a tie
+    //     if (unit_width_levels > max_unit_width_levels || (unit_width_levels == max_unit_width_levels && current_gradient > max_gradient))
+    //     {
+    //         selected_agent = id;
+    //         max_unit_width_levels = unit_width_levels;
+    //         max_gradient = current_gradient;
+    //     }
+
+    //     printf("built mdd for agent %d (%d) with unit-width levels %d and gradient %lf\n", id, agents[id].id, unit_width_levels, current_gradient);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d with max unit-width levels %d and gradient %lf\n", selected_agent, max_unit_width_levels, max_gradient);
+    // return selected_agent;
+
+    // //unit length + 0.5*2unit + 0.25*3unit
+    // int selected_agent = -1;
+    // vector<int> id_list;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+
+    // int num_remaining_agents = int(id_list.size());
+    // double max_score = -1.0; // Initialize to a value that will be smaller than any possible score
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     printf("Iteration %d ", i);
+    //     int id = id_list[i];
+    //     printf("start agent %d of %d;", id, remaining_agents_set.size());
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+    //     if (agents[id].path.empty()) // Check if path is valid and non-empty
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+
+    //     int unit_width_levels = 0;
+    //     int two_unit_width_levels = 0;
+    //     int three_unit_width_levels = 0;
+
+    //     for (auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //             unit_width_levels += 1;
+    //         else if (level.size() == 2)
+    //             two_unit_width_levels += 1;
+    //         else if (level.size() == 3)
+    //             three_unit_width_levels += 1;
+    //     }
+
+    //     double score = unit_width_levels + (two_unit_width_levels * 0.5) + (three_unit_width_levels * (1.0 / 4.0));
+
+    //     if (max_score < score)
+    //     {
+    //         selected_agent = id;
+    //         max_score = score;
+    //     }
+
+    //     printf("built mdd for agent %d (%d) with score %lf\n", id, agents[id].id, score);
+
+    //     if (mode != 6)
+    //         agents[id].mdd.clear();
+    // }
+
+    // printf("selection done: selected agent %d with max score %lf\n", selected_agent, max_score);
+    // return selected_agent;
+
+    // // Select agent with the max num of unit length, when there is a tie, select the agent with the max 2-unit length num, if still the same, select the one with the most 3unit length num
+
+    // int selected_agent = -1;
+    // std::vector<int> id_list;
+    // std::vector<int> tied_agents;
+    // for (auto id : remaining_agents_set)
+    //     id_list.push_back(id);
+
+    // int num_remaining_agents = int(id_list.size());
+    // int max_unit_width_levels = -1;
+    // int max_two_unit_width_levels = -1;
+    // int max_three_unit_width_levels = -1;
+
+    // // std::mt19937 gen(std::time(nullptr));
+
+    // for (int i = 0; i < num_remaining_agents; i++)
+    // {
+    //     int id = id_list[i];
+
+    //     agents[id].path = agents[id].path_planner->findPath(constraint_table);
+
+    //     if (agents[id].path.empty())
+    //     {
+    //         printf("No valid path found for agent %d. Exiting.\n", id);
+    //         return -1;
+    //     }
+
+    //     if (agents[id].mdd.levels.empty() || mode == 5)
+    //     {
+    //         agents[id].mdd.buildMDD(constraint_table, agents[id].path_planner);
+    //     }
+
+    //     int unit_width_levels = 0;
+    //     int two_unit_width_levels = 0;
+    //     int three_unit_width_levels = 0;
+
+    //     for (auto &level : agents[id].mdd.levels)
+    //     {
+    //         if (level.size() == 1)
+    //             unit_width_levels++;
+    //         else if (level.size() == 2)
+    //             two_unit_width_levels++;
+    //         else if (level.size() == 3)
+    //             three_unit_width_levels++;
+    //     }
+
+    //     if (unit_width_levels > max_unit_width_levels ||
+    //         (unit_width_levels == max_unit_width_levels && two_unit_width_levels > max_two_unit_width_levels) ||
+    //         (unit_width_levels == max_unit_width_levels && two_unit_width_levels == max_two_unit_width_levels && three_unit_width_levels > max_three_unit_width_levels))
+    //     {
+
+    //         tied_agents.clear();
+    //         tied_agents.push_back(id);
+
+    //         max_unit_width_levels = unit_width_levels;
+    //         max_two_unit_width_levels = two_unit_width_levels;
+    //         max_three_unit_width_levels = three_unit_width_levels;
+    //     }
+    //     else if (unit_width_levels == max_unit_width_levels &&
+    //              two_unit_width_levels == max_two_unit_width_levels &&
+    //              three_unit_width_levels == max_three_unit_width_levels)
+    //     {
+
+    //         tied_agents.push_back(id);
+    //     }
+
+    //     if (mode != 6)
+    //     {
+    //         agents[id].mdd.clear();
+    //     }
+    // }
+
+    // if (!tied_agents.empty())
+    // {
+    //     // std::uniform_int_distribution<> tie_dist(0, tied_agents.size() - 1);
+    //     // selected_agent = tied_agents[tie_dist(gen)];
+    //     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    //     std::default_random_engine generator(seed);
+
+    //     std::uniform_int_distribution<int> distribution(0, tied_agents.size() - 1);
+    //     int random_index = distribution(generator);
+
+    //     selected_agent = tied_agents[random_index];
+    // }
+
+    // printf("selection done: selected agent %d\n", selected_agent);
+    // return selected_agent;
     // int selected_agent = -1;
     // vector<int> id_list;
     // for (auto id : remaining_agents_set)

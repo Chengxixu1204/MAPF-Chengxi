@@ -14,13 +14,11 @@ tl=50000
 # 5 recompute mdd
 # 6 no recompute mdd
 
-for k in $(seq 225 25 225)
-do
-  mode=5
-  output=random_test_unitlevel/$name-$k-$mode-random.csv
-  for i in $(seq 1 1 25)
-  do
-    echo    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
-    ./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
-  done
-done
+k=150
+mode=5
+i=9
+output="test_for_distribution/$name-$k-$mode-random.csv"
+
+echo "./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode"
+./lns -m $map -a $scen-$i.scen -o $output -k $k -t $tl --agtselection=$mode
+
